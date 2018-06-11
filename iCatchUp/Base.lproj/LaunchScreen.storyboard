@@ -1,7 +1,11 @@
-<?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13122.16" systemVersion="17A277" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" launchScreen="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="01J-lp-oVM">
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14113" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" launchScreen="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="01J-lp-oVM">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13104.12"/>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -13,13 +17,91 @@
                     <view key="view" contentMode="scaleToFill" id="Ze5-6b-2t3">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="catchup-launch" translatesAutoresizingMaskIntoConstraints="NO" id="t9w-hF-s6u">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Mva-X2-ey3">
+                                <rect key="frame" x="0.0" y="506" width="375" height="161"/>
+                                <subviews>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="clearbit-logo" translatesAutoresizingMaskIntoConstraints="NO" id="RsU-gX-THh">
+                                        <rect key="frame" x="20" y="50" width="60" height="60"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="60" id="kFQ-em-VBD"/>
+                                            <constraint firstAttribute="height" constant="60" id="zzO-Bx-O2b"/>
+                                        </constraints>
+                                    </imageView>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="newsapi-logo" translatesAutoresizingMaskIntoConstraints="NO" id="pjv-q8-G9r">
+                                        <rect key="frame" x="295" y="50" width="60" height="60"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="60" id="CEt-WQ-cak"/>
+                                            <constraint firstAttribute="width" constant="60" id="bIr-i4-IQ3"/>
+                                        </constraints>
+                                    </imageView>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Powered By" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="02s-jr-X6X">
+                                        <rect key="frame" x="20" y="21" width="91" height="21"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="ClearBit" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="pjy-gY-ySi">
+                                        <rect key="frame" x="20" y="118" width="61" height="21"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="NewsApi" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bXI-C9-ejY">
+                                        <rect key="frame" x="287" y="118" width="68" height="21"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstItem="02s-jr-X6X" firstAttribute="leading" secondItem="Mva-X2-ey3" secondAttribute="leading" constant="20" id="1NZ-ce-kYz"/>
+                                    <constraint firstItem="RsU-gX-THh" firstAttribute="top" secondItem="02s-jr-X6X" secondAttribute="bottom" constant="8" symbolic="YES" id="5uR-n7-sxU"/>
+                                    <constraint firstItem="02s-jr-X6X" firstAttribute="top" secondItem="Mva-X2-ey3" secondAttribute="top" constant="21" id="ApH-7e-ZRC"/>
+                                    <constraint firstItem="bXI-C9-ejY" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="Mva-X2-ey3" secondAttribute="leading" constant="20" symbolic="YES" id="DIq-IG-oj8"/>
+                                    <constraint firstItem="pjy-gY-ySi" firstAttribute="top" secondItem="RsU-gX-THh" secondAttribute="bottom" constant="8" symbolic="YES" id="FvE-cf-pYd"/>
+                                    <constraint firstAttribute="trailing" secondItem="pjv-q8-G9r" secondAttribute="trailing" constant="20" id="JQz-6v-5ni"/>
+                                    <constraint firstAttribute="trailing" secondItem="bXI-C9-ejY" secondAttribute="trailing" constant="20" id="RBl-rt-qst"/>
+                                    <constraint firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="02s-jr-X6X" secondAttribute="trailing" constant="20" symbolic="YES" id="V44-7E-K0g"/>
+                                    <constraint firstItem="pjy-gY-ySi" firstAttribute="leading" secondItem="Mva-X2-ey3" secondAttribute="leading" constant="20" id="VEG-bU-6FM"/>
+                                    <constraint firstItem="pjv-q8-G9r" firstAttribute="top" secondItem="RsU-gX-THh" secondAttribute="top" id="a1b-kZ-YmK"/>
+                                    <constraint firstItem="pjy-gY-ySi" firstAttribute="baseline" secondItem="bXI-C9-ejY" secondAttribute="baseline" id="dhH-AI-9d3"/>
+                                    <constraint firstAttribute="height" constant="161" id="g86-8m-phi"/>
+                                    <constraint firstItem="RsU-gX-THh" firstAttribute="leading" secondItem="Mva-X2-ey3" secondAttribute="leading" constant="20" id="lKc-Xy-bqi"/>
+                                    <constraint firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="pjy-gY-ySi" secondAttribute="trailing" constant="20" symbolic="YES" id="vd0-ml-a8Z"/>
+                                </constraints>
+                            </view>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="iCatchUp" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gEF-jn-tgE">
+                                <rect key="frame" x="117.5" y="314" width="140" height="39"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="32"/>
+                                <color key="textColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="Mva-X2-ey3" firstAttribute="bottom" secondItem="6Tk-OE-BBY" secondAttribute="bottom" id="SZ9-9I-RWp"/>
+                            <constraint firstItem="Mva-X2-ey3" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="cft-Hq-KPZ"/>
+                            <constraint firstItem="gEF-jn-tgE" firstAttribute="centerY" secondItem="Ze5-6b-2t3" secondAttribute="centerY" id="dgF-cf-YfG"/>
+                            <constraint firstItem="Mva-X2-ey3" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="dr6-po-s0K"/>
+                            <constraint firstItem="gEF-jn-tgE" firstAttribute="centerX" secondItem="Ze5-6b-2t3" secondAttribute="centerX" id="vxP-aw-U0r"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="iYj-Kq-Ea1" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="53" y="375"/>
+            <point key="canvasLocation" x="52" y="374.66266866566718"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="catchup-launch" width="1024" height="682"/>
+        <image name="clearbit-logo" width="400" height="400"/>
+        <image name="newsapi-logo" width="400" height="400"/>
+    </resources>
 </document>

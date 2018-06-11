@@ -23,23 +23,6 @@
 		417DB22220C1A688003A39B2 /* LogoApi.swift in Sources */ = {isa = PBXBuildFile; fileRef = 417DB22120C1A688003A39B2 /* LogoApi.swift */; };
 /* End PBXBuildFile section */
 
-/* Begin PBXContainerItemProxy section */
-		417DB1A120C19CEB003A39B2 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 417DB18420C19CE9003A39B2 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 417DB18B20C19CE9003A39B2;
-			remoteInfo = iCatchUp;
-		};
-		417DB1AC20C19CEB003A39B2 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 417DB18420C19CE9003A39B2 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 417DB18B20C19CE9003A39B2;
-			remoteInfo = iCatchUp;
-		};
-/* End PBXContainerItemProxy section */
-
 /* Begin PBXFileReference section */
 		4163512220C4ED17002AEEC6 /* SettingsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsViewController.swift; sourceTree = "<group>"; };
 		417A851320CDDF8200E61DCF /* AlamofireImage.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AlamofireImage.framework; path = Carthage/Build/iOS/AlamofireImage.framework; sourceTree = "<group>"; };
@@ -52,8 +35,6 @@
 		417DB19620C19CEB003A39B2 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		417DB19920C19CEB003A39B2 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		417DB19B20C19CEB003A39B2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		417DB1A020C19CEB003A39B2 /* iCatchUpTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = iCatchUpTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		417DB1AB20C19CEB003A39B2 /* iCatchUpUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = iCatchUpUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		417DB1BE20C19E02003A39B2 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
 		417DB21B20C1A64E003A39B2 /* Article.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Article.swift; sourceTree = "<group>"; };
 		417DB21D20C1A65A003A39B2 /* Source.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Source.swift; sourceTree = "<group>"; };
@@ -69,20 +50,6 @@
 				417A851620CDDF8200E61DCF /* AlamofireImage.framework in Frameworks */,
 				417A851720CDDF8200E61DCF /* Alamofire.framework in Frameworks */,
 				417A851820CDDF8200E61DCF /* SwiftyJSON.framework in Frameworks */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		417DB19D20C19CEB003A39B2 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		417DB1A820C19CEB003A39B2 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -112,8 +79,6 @@
 			isa = PBXGroup;
 			children = (
 				417DB18C20C19CE9003A39B2 /* iCatchUp.app */,
-				417DB1A020C19CEB003A39B2 /* iCatchUpTests.xctest */,
-				417DB1AB20C19CEB003A39B2 /* iCatchUpUITests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -182,42 +147,6 @@
 			productReference = 417DB18C20C19CE9003A39B2 /* iCatchUp.app */;
 			productType = "com.apple.product-type.application";
 		};
-		417DB19F20C19CEB003A39B2 /* iCatchUpTests */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = 417DB1B720C19CEB003A39B2 /* Build configuration list for PBXNativeTarget "iCatchUpTests" */;
-			buildPhases = (
-				417DB19C20C19CEB003A39B2 /* Sources */,
-				417DB19D20C19CEB003A39B2 /* Frameworks */,
-				417DB19E20C19CEB003A39B2 /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				417DB1A220C19CEB003A39B2 /* PBXTargetDependency */,
-			);
-			name = iCatchUpTests;
-			productName = iCatchUpTests;
-			productReference = 417DB1A020C19CEB003A39B2 /* iCatchUpTests.xctest */;
-			productType = "com.apple.product-type.bundle.unit-test";
-		};
-		417DB1AA20C19CEB003A39B2 /* iCatchUpUITests */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = 417DB1BA20C19CEB003A39B2 /* Build configuration list for PBXNativeTarget "iCatchUpUITests" */;
-			buildPhases = (
-				417DB1A720C19CEB003A39B2 /* Sources */,
-				417DB1A820C19CEB003A39B2 /* Frameworks */,
-				417DB1A920C19CEB003A39B2 /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				417DB1AD20C19CEB003A39B2 /* PBXTargetDependency */,
-			);
-			name = iCatchUpUITests;
-			productName = iCatchUpUITests;
-			productReference = 417DB1AB20C19CEB003A39B2 /* iCatchUpUITests.xctest */;
-			productType = "com.apple.product-type.bundle.ui-testing";
-		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -230,14 +159,6 @@
 				TargetAttributes = {
 					417DB18B20C19CE9003A39B2 = {
 						CreatedOnToolsVersion = 9.4;
-					};
-					417DB19F20C19CEB003A39B2 = {
-						CreatedOnToolsVersion = 9.4;
-						TestTargetID = 417DB18B20C19CE9003A39B2;
-					};
-					417DB1AA20C19CEB003A39B2 = {
-						CreatedOnToolsVersion = 9.4;
-						TestTargetID = 417DB18B20C19CE9003A39B2;
 					};
 				};
 			};
@@ -255,8 +176,6 @@
 			projectRoot = "";
 			targets = (
 				417DB18B20C19CE9003A39B2 /* iCatchUp */,
-				417DB19F20C19CEB003A39B2 /* iCatchUpTests */,
-				417DB1AA20C19CEB003A39B2 /* iCatchUpUITests */,
 			);
 		};
 /* End PBXProject section */
@@ -269,20 +188,6 @@
 				417DB19A20C19CEB003A39B2 /* LaunchScreen.storyboard in Resources */,
 				417DB19720C19CEB003A39B2 /* Assets.xcassets in Resources */,
 				417DB19520C19CE9003A39B2 /* Main.storyboard in Resources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		417DB19E20C19CEB003A39B2 /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		417DB1A920C19CEB003A39B2 /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -326,34 +231,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		417DB19C20C19CEB003A39B2 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		417DB1A720C19CEB003A39B2 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXSourcesBuildPhase section */
-
-/* Begin PBXTargetDependency section */
-		417DB1A220C19CEB003A39B2 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = 417DB18B20C19CE9003A39B2 /* iCatchUp */;
-			targetProxy = 417DB1A120C19CEB003A39B2 /* PBXContainerItemProxy */;
-		};
-		417DB1AD20C19CEB003A39B2 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = 417DB18B20C19CE9003A39B2 /* iCatchUp */;
-			targetProxy = 417DB1AC20C19CEB003A39B2 /* PBXContainerItemProxy */;
-		};
-/* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
 		417DB19320C19CE9003A39B2 /* Main.storyboard */ = {
@@ -533,84 +411,6 @@
 			};
 			name = Release;
 		};
-		417DB1B820C19CEB003A39B2 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
-				BUNDLE_LOADER = "$(TEST_HOST)";
-				CODE_SIGN_STYLE = Automatic;
-				INFOPLIST_FILE = iCatchUpTests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
-				PRODUCT_BUNDLE_IDENTIFIER = acme.iCatchUpTests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 4.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/iCatchUp.app/iCatchUp";
-			};
-			name = Debug;
-		};
-		417DB1B920C19CEB003A39B2 /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
-				BUNDLE_LOADER = "$(TEST_HOST)";
-				CODE_SIGN_STYLE = Automatic;
-				INFOPLIST_FILE = iCatchUpTests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
-				PRODUCT_BUNDLE_IDENTIFIER = acme.iCatchUpTests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 4.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/iCatchUp.app/iCatchUp";
-			};
-			name = Release;
-		};
-		417DB1BB20C19CEB003A39B2 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
-				CODE_SIGN_STYLE = Automatic;
-				INFOPLIST_FILE = iCatchUpUITests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
-				PRODUCT_BUNDLE_IDENTIFIER = acme.iCatchUpUITests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 4.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_TARGET_NAME = iCatchUp;
-			};
-			name = Debug;
-		};
-		417DB1BC20C19CEB003A39B2 /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
-				CODE_SIGN_STYLE = Automatic;
-				INFOPLIST_FILE = iCatchUpUITests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
-				PRODUCT_BUNDLE_IDENTIFIER = acme.iCatchUpUITests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 4.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_TARGET_NAME = iCatchUp;
-			};
-			name = Release;
-		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -628,24 +428,6 @@
 			buildConfigurations = (
 				417DB1B520C19CEB003A39B2 /* Debug */,
 				417DB1B620C19CEB003A39B2 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		417DB1B720C19CEB003A39B2 /* Build configuration list for PBXNativeTarget "iCatchUpTests" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				417DB1B820C19CEB003A39B2 /* Debug */,
-				417DB1B920C19CEB003A39B2 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		417DB1BA20C19CEB003A39B2 /* Build configuration list for PBXNativeTarget "iCatchUpUITests" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				417DB1BB20C19CEB003A39B2 /* Debug */,
-				417DB1BC20C19CEB003A39B2 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
