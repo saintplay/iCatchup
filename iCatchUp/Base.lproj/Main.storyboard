@@ -83,7 +83,7 @@
         <!--Settings-->
         <scene sceneID="al5-HR-0ZX">
             <objects>
-                <viewController id="xS8-AI-Ptv" sceneMemberID="viewController">
+                <viewController id="xS8-AI-Ptv" customClass="SettingsViewController" customModule="iCatchUp" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8gG-6d-g9f">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
